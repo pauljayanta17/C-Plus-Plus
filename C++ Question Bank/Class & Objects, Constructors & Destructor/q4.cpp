@@ -73,8 +73,21 @@ public:
             };
         }
     }
+    void displayDate(){
+        cout << "Day is "<<day<<endl;
+        cout << "Month is "<<month<<endl;
+        cout << "Year is "<<year<<endl;
+    }
 };
 
 int main()
 {
+    Date date1,date2,date;
+    cout << "Enter the first date "<<endl;
+    date1.getDate();
+    cout << "Enter the second date "<<endl;
+    date2.getDate();
+    date.DifferenceDate(date1,date2);
+    cout << "Difference of date is "<<endl;
+    date.displayDate();
 }
